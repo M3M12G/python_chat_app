@@ -1,0 +1,13 @@
+{
+  "db":{
+    "host": "localhost",
+    "database": "chat_servicedb",
+    "port": 5432,
+    "user": "postgres",
+    "password": "root"
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 7007
+  }
+}
