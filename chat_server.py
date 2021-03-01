@@ -127,7 +127,8 @@ with sc.socket(sc.AF_INET, sc.SOCK_STREAM) as chat_socket:
         db_con.seed_db()
     except Exception as err:
         exception_type = type(err).__name__
-        print("[SERVER]:SOCKET BIND: {} - {}".format(exception_type, err))
+        print("[SERVER]: {} - {}".format(exception_type, err))
+        quit()
     # chat server listening to connections from client's sockets
     chat_socket.listen()
     print("[SERVER]: Listening new connections on {} - {}".format(
